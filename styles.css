@@ -1,0 +1,46 @@
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+main{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ body{
+    display:flex;
+    flex-direction:column;
+    align-self:center;
+    justify-self: center;
+    background-color: antiquewhite;
+ }
+  #container {
+    display:flex;
+    flex-wrap: wrap;
+    display: grid;
+    grid-gap: 0em;
+    grid-template-rows: repeat(var(--grid-rows), 0fr);
+    grid-template-columns: repeat(var(--grid-cols), 0fr);
+    cursor: crosshair;
+    height: 550px;
+    width:550px;
+    background-color: beige;
+    
+
+  }
+  #bigBorder {
+    background-color: brown;
+    padding: 50px;
+    border-radius: 50px;
+
+  }
+  
+  .grid-item {
+    
+    text-align: center;
+  }
+  #btn{
+    background-color: azure;
+
+  }
